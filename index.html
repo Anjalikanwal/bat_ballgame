@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container">
+        <h1 >Bat Ball Stump Game</h1>
+        <div id="button_container">
+            <button class="button" onclick=" 
+            let Comp_choice;
+            let RandomNum= Math.random()*3;
+            if(RandomNum >0 && RandomNum<=1){
+                Comp_choice='bat';
+
+            }
+            else if(RandomNum>1&& RandomNum<=2){
+                Comp_choice='ball';
+
+            }
+            else{
+                Comp_choice='stump';
+
+
+            }
+            let result;
+            if(Comp_choice==='bat'){
+                result='its a tie';
+            }
+            else if(Comp_choice==='ball'){
+                result='user won';
+            } 
+            else{
+                result='comp won'
+            }
+            
+            alert(`user click bat and Comp_choice is${Comp_choice} and ${result}`)"> Bat</button>
+            <button class="button" onclick="
+        let Comp_choice;
+        let RandomNum = Math.random() * 3;
+        if(RandomNum > 0 && RandomNum <= 1){
+        Comp_choice = 'bat';
+        }
+       else if(RandomNum > 1 && RandomNum <= 2){
+        Comp_choice = 'ball';
+        }
+       else{
+        Comp_choice = 'stump';
+        }
+
+         if(Comp_choice === 'bat'){
+        result = 'user won';
+        }
+       else if(Comp_choice === 'ball'){
+        result = 'its a tie';
+       } 
+      else{
+        result = 'computer won';
+    }
+
+    alert(`user click ball and Comp_choice is ${Comp_choice} and ${result}`);
+"> Ball</button>
+
+
+            <button class="button"
+            onclick = "
+             let Comp_choice;
+             let RandomNum= Math.random()*3;
+            if(RandomNum >0 && RandomNum<=1){
+                Comp_choice='bat';
+
+            }
+            else if(RandomNum>1&& RandomNum<=2){
+                Comp_choice='ball';
+
+            }
+            else{
+                Comp_choice='stump';
+
+            }
+            if(Comp_choice==='bat'){
+                result='computer won';
+            }
+            else if(Comp_choice==='ball'){
+                result='user won';
+            } 
+            else{
+                result='its a tie'
+            }
+            
+            alert(`user click stump and Comp_choice is${Comp_choice} and ${result}`)"> Stump</button>
+        </div>
+    </div>
+    
+</body>
+</html>
